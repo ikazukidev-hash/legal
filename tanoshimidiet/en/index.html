@@ -16,7 +16,7 @@
 <body>
 <p class="meta"><a href="../">日本語</a></p>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective: 2026-09-06<br>Last updated: 2026-11-07<br>App: Tanoshimi Diet (meal logging with photos and a weight graph)</p>
+<p class="meta">Effective: 2026-09-06<br>Last updated: 2026-11-18<br>App: Tanoshimi Diet (meal logging with photos and a weight graph)</p>
 
 <p>Tanoshimi Diet ("the App") is provided by KAZUKI SAWASHIMA ("the Developer"). It lets you record your meals and weight. Your records are stored on your device. For AI estimates, usage stats, purchases, and sharing, the App sends the information described below outside your device.</p>
 
@@ -25,7 +25,7 @@
 
 <h2>When estimating from a meal photo or a dish name</h2>
 <p>For an estimate from a photo, the App sends a reduced-size version of the photo you took or selected. For an estimate from a dish name, it sends the dish name and amount you entered. They are sent to a server operated by the Developer (Cloudflare Workers). The server uses Cloudflare Workers AI, or Anthropic's API if the Developer has enabled it, and returns an estimate of the dish name, calories, and nutrients. If you only save a photo or enter a record by hand, the content is not sent to an analysis service unless you run an AI estimate (except for photos waiting for an estimate, described in the next paragraph).</p>
-<p>A photo you take or select after using up that day's allowance of estimates is kept on your device as a photo waiting for an estimate. When you open the App or bring it back to the foreground after 8 p.m. Japan time, and you still have estimates left for that day, the waiting photos are automatically sent for estimation, oldest first. A record for which you entered the dish name first does not become a waiting photo.</p>
+<p>A photo you take or select after using up that day's allowance of estimates is kept on your device as a photo waiting for an estimate. When you open the App or bring it back to the foreground after the date has changed, the waiting photos are automatically sent for estimation, oldest first, using that day's remaining estimates. On the free plan, one estimate is kept for that day's meals before 8 p.m. Japan time. A record for which you entered the dish name first does not become a waiting photo.</p>
 <p>To count how many estimates you use, each estimate request includes a random ID that the App generates and stores on your device. To check whether you have PRO, the request also includes your user ID in the purchase platform (RevenueCat). The random ID is not your name, but it can be used to recognize continued use of the same app. The server also receives the source IP address when the request is made. If a photo or dish name contains personal information, that information is sent as well.</p>
 <p>The Developer's server program does not write the photos, dish names, or estimate results it receives to a storage database. To manage usage counts, it temporarily stores values made by combining IDs, IP addresses, and similar data with the date and converting them, the processing result, and an expiration time, and it also stores the result of the purchase entitlement check for a short time. Processing logs used to investigate failures are kept according to the server platform's settings.</p>
 <p>Handling by these analysis services is also subject to each provider's terms. Cloudflare states that it does not use inputs and outputs passed to Workers AI for model training or service improvement without explicit consent. By default, Anthropic's API deletes inputs and outputs within 30 days, but there are exceptions for contracts, responses to violations of its terms, legal requirements, and so on. For details, see <a href="https://developers.cloudflare.com/workers-ai/platform/data-usage/">Cloudflare's data usage policy</a> and <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropic's retention periods</a>.</p>
@@ -60,7 +60,7 @@
 <p>The App uses local notifications on your device for the following. Notification content is not sent outside your device. You can change notification permission in your device's Settings at any time.</p>
 <ul>
 <li>A recording reminder (off by default; you choose the time under "Meal reminder" in Settings)</li>
-<li>A notice at 8 p.m. when you have photos waiting for an estimate (only if notifications are allowed)</li>
+<li>A notice at 8 a.m. when you have photos waiting for an estimate (only if notifications are allowed)</li>
 <li>If you started the yearly plan (Yearly) with a free trial, a reminder before the free trial ends</li>
 </ul>
 
