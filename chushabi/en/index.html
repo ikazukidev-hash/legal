@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shotmap Privacy Policy and Terms of Use</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.7;color:#222;max-width:720px;margin:0 auto;padding:2rem 1.25rem}
+  h1{font-size:1.4rem;border-bottom:2px solid #2A5596;padding-bottom:.5rem}
+  h2{font-size:1.1rem;margin-top:2rem;color:#1E3F75}
+  a{color:#1E3F75}
+  .meta{color:#666;font-size:.9rem}
+  @media (prefers-color-scheme: dark){body{background:#111;color:#ddd}a{color:#A9C1EC}h1,h2{color:#A9C1EC}h1{border-color:#2A5596}.meta{color:#999}}
+</style>
+</head>
+<body>
+<p class="meta"><a href="../">日本語</a></p>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective: 2026-11-22<br>App: Shotmap (Japanese name: 週いち注射). A log of your injections, injection sites, weight, and symptoms</p>
+
+<p>Shotmap ("the App") is provided by KAZUKI SAWASHIMA ("the Developer"). It lets you record the shots you give yourself, where you gave them, the dose you write down, your weight, and how you feel. Your records are stored only on your device, and in Apple Health if you turn that on. The Developer does not receive your shots, weight, symptoms, notes, or exported files. The only information the App sends off your device is described below.</p>
+
+<h2>Records on your device</h2>
+<p>Shot dates and times, injection sites, doses (the text you type), notes, weight, symptoms (appetite, symptom levels, notes), your schedule (the nickname you give it, the interval, and the reminder time), and the number of pens or doses left are stored in the App's own storage on your device (SQLite). There is no mechanism that sends them to the Developer's servers or to other companies.</p>
+
+<h2>Apple Health</h2>
+<p>Only if you turn on "Read and write weight" under Health in Settings does the App exchange data with Apple Health, and only body weight. It is off by default. Shots and symptoms are never written to Health.</p>
+<ul>
+<li>Read: body weight saved in Health, for example by a smart scale's app, which the App shows as your weight</li>
+<li>Written: the weight you enter in the App. If you edit it, the App updates it in Health; if you delete it, the App deletes the matching entry</li>
+</ul>
+<p>Information read from or written to Health is never sent to the Developer's servers, to analytics services, or to any other company, and it is never used for advertising or marketing. Turning the setting off stops further reading and writing. You can change permissions in the Health app.</p>
+
+<h2>Notifications</h2>
+<p>If you allow notifications, shot-day reminders are scheduled and shown on your device. Notifications never include the name of a medicine. Scheduling happens entirely on your device and nothing is sent to the Developer or other companies.</p>
+
+<h2>PDF and export</h2>
+<p>The visit PDF and the export file (JSON) are created on your device when you choose to create them, and they go only to the place you pick on the iOS share sheet. Once shared, a file is handled under the terms of that destination.</p>
+
+<h2>Usage statistics</h2>
+<p>To find what is hard to use and fix it, the App can send usage statistics to a counting server run by the Developer (m.kurabedoki.com) and to the analytics service PostHog (PostHog, Inc., USA).</p>
+<ul>
+<li>When it is sent: on a device whose region is set to Japan, sending is on by default. On devices with any other region, the App asks you first and sends nothing until you choose to send. You can change this at any time with "Send usage statistics" in Settings. If you turn it off, nothing more is sent (one event saying it was turned off is sent just before it stops, only if sending was on). Turning it off does not change any features</li>
+<li>What is sent: the app name; the name of an action (opened the App; logged a shot, weight, or symptoms; logged today's appetite or nausea on the Today screen; edited or deleted a shot; saved the schedule; added pens; viewed the visit screen, the chart, or all records; exported a PDF; turned on Health; exported or imported a backup; showed the PRO screen; purchased, restored, or a purchase failed; asked for a rating; opened the feedback page; tapped a link to another app by the Developer); the App version; the date and time of the action (so the time you log a shot is sent as the time of that action); and a random ID created on your device. One event is also sent the first time the App is opened on the device and the first time the PRO screen is shown</li>
+<li>What is not sent: injection sites, doses, weight values, symptoms and their levels, the schedule nickname, notes, Health values, the number of records, your name, your email address, the advertising identifier (IDFA), or your location</li>
+<li>The random ID is used only to group actions from the same device. It is not matched with other apps or other companies' data. The counting server does not keep the ID as it is; it converts it into a form that cannot be reversed (a hash) and uses it only to count whether the App is still in use 1, 7, and 30 days after you started. For PostHog, the App turns off the feature that estimates location from the IP address. Development builds, TestFlight builds, and the Developer's own devices send nothing</li>
+</ul>
+
+<h2>Backups</h2>
+<p>The App has no feature that saves your records to iCloud Drive or another cloud service. Depending on your device settings, the App's data may be included in iOS backups to iCloud or a computer.</p>
+
+<h2>Purchases</h2>
+<p>PRO uses in-app purchases through the App Store. Apple processes payments, and the Developer never receives your card number. Purchases are managed with RevenueCat (RevenueCat, Inc., USA). The App starts communicating with RevenueCat when you open the purchase screen, purchase or restore, or open the App on a device that already has PRO; after that it may also communicate while the App is running, for example when you bring it back to the foreground. On a device without PRO, the App does not communicate with RevenueCat until you open the purchase screen.</p>
+<p>Information sent to RevenueCat includes an automatically generated app user ID, the identifier for vendor (IDFV) where available, the device model, OS, App and SDK versions, and region and currency settings. For purchases and restores, it handles the product identifier, purchase date and time, transaction and receipt information, and purchase status. The current state of the iOS tracking permission is also sent, but the App never asks for that permission. The App does not collect advertising attribution data (which ad you came from).</p>
+
+<h2>Information you send when you contact the Developer</h2>
+<p>If you contact the Developer by email, your email address and message are used only to reply to you.</p>
+
+<h2>Your rights, retention, and transfers</h2>
+<ul>
+<li>Legal basis (UK and EEA users): usage statistics are sent only with your consent, which you can withdraw at any time in Settings. Purchase information is processed to provide the subscription you bought</li>
+<li>Your rights: you can ask for access to or deletion of your usage statistics and object to processing by contacting the Developer. The random ID cannot be linked to you, so turning off "Send usage statistics" in Settings is the most direct way to stop it; nothing more is sent after that, and deleting the App deletes the ID. Records in the App are deleted when you delete the App, but weight written to Apple Health and iOS backups remain</li>
+<li>Retention: usage statistics are kept only as long as needed to understand how the App is used. Purchase records are kept as required for the subscription and by law</li>
+<li>Transfers: PostHog and RevenueCat process data in the United States</li>
+<li>Complaints: in the UK you can complain to the Information Commissioner's Office (ico.org.uk). Please contact the Developer first so we can help</li>
+</ul>
+
+<h2>Changes to this policy</h2>
+<p>This policy may change. The updated policy takes effect when posted on this page.</p>
+
+<h1 id="terms">Terms of Use</h1>
+<p class="meta">Effective: 2026-11-22</p>
+<p>In addition to these terms, Apple's standard Licensed Application End User License Agreement applies: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+
+<h2>The service</h2>
+<p>The App records the injections you give yourself, your weight, and your symptoms, and shows them as lists and tables. It is not a medical device. It does not diagnose, treat, or tell you a dose or interval, and it does not show how well any medicine works. The "suggested site" only points to a site different from your last shot that you have not used for the longest time. Follow your doctor's or pharmacist's instructions on how, how much, and how often to inject. If you are worried about how you feel, talk to your doctor. In an emergency, contact your local emergency number or go to a hospital right away.</p>
+<p>The App is not affiliated with, endorsed by, or sponsored by any pharmaceutical company.</p>
+
+<h2>PRO (auto-renewing subscriptions)</h2>
+<ul>
+<li>Names: Shotmap PRO (Monthly) / Shotmap PRO (Yearly)</li>
+<li>Includes: the visit PDF and weight charts for 6 months, 1 year, and all time. Logging, reminders, the suggested site, pens left, the visit screen up to 12 weeks, Apple Health, and export are free</li>
+<li>Price and length: shown on the purchase screen in the App and in the App Store (Monthly renews every month and Yearly every year)</li>
+<li>Payment is charged to your Apple Account at confirmation of purchase. The subscription renews automatically unless auto-renew is turned off at least 24 hours before the end of the current period. You can manage or cancel it at any time in Settings &gt; Apple Account &gt; Subscriptions on your device</li>
+<li>Refunds for periods already paid follow Apple's policies</li>
+</ul>
+
+<h2>Disclaimer</h2>
+<p>Except in cases of intent or gross negligence, the Developer is not liable for damages arising from use of the App. To guard against data loss from device failure, changing devices, or deleting the App, please use the export feature.</p>
+
+<h2>Changes to these terms</h2>
+<p>These terms may change without notice. Updated terms take effect when posted on this page.</p>
+
+<h2>Contact</h2>
+<p>Developer: KAZUKI SAWASHIMA<br>Email: kzk110pon@icloud.com</p>
+</body>
+</html>
