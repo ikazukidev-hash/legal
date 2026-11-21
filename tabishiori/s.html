@@ -16,7 +16,6 @@
 :root {
   color-scheme: light;
   --gothic: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
-  --mincho: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
   --maru: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --ground: #F2F2F7; --sheet: #FFFFFF; --ink: #000000; --muted: #5E5E63; --seal: #A4262C;
@@ -89,7 +88,7 @@ noscript p { max-width: 480px; margin: 0 auto; padding: 24px 16px; }
     #263A66;
 }
 .slip { display: inline-block; max-width: 100%; padding: 10px 14px; background: #fff; box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 4px var(--slip, #263A66), inset 0 0 0 6px #fff, inset 0 0 0 6.5px var(--slip, #263A66); }
-.slip .title { font-family: var(--mincho); font-weight: 600; }
+.slip .title { font-family: var(--maru); font-weight: 600; }
 .slip .sub { color: #5E5E63; }
 [data-tpl="fuukei"] .day {
   padding: 4px 12px 8px 20px; border-radius: 6px;
@@ -126,7 +125,7 @@ body[data-tpl="instant"] { background: #2B2A28; }
 body[data-tpl="passport"] { background: #1B2A4A; }
 [data-tpl="passport"] .sheet { --sheet: #1B2A4A; }
 [data-tpl="passport"] .head { color: #CBAA52; }
-[data-tpl="passport"] .title { font-family: var(--mincho); font-weight: 600; font-size: 23px; letter-spacing: .08em; }
+[data-tpl="passport"] .title { font-family: var(--gothic); font-weight: 600; font-size: 23px; letter-spacing: .08em; }
 [data-tpl="passport"] .sub { letter-spacing: .07em; }
 [data-tpl="passport"] .day {
   padding: 2px 12px 8px; border-radius: 8px;
@@ -150,23 +149,23 @@ body[data-tpl="passport"] { background: #1B2A4A; }
     repeating-linear-gradient(-45deg, transparent 0 7.9px, #D2E0E5 7.9px 8.6px),
     #E4EDF0;
 }
-[data-tpl="kippu"] .head { padding: 8px 10px 7px; font-family: var(--mincho); }
+[data-tpl="kippu"] .head { padding: 8px 10px 7px; font-family: var(--gothic); }
 [data-tpl="kippu"] .head .tags { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; line-height: 1; }
 [data-tpl="kippu"] .head .tags .maru { display: grid; place-items: center; width: 20px; height: 20px; border: 1px solid; border-radius: 50%; }
 [data-tpl="kippu"] .head .tags .hako { padding: 3px 3px 3px 6px; border: 1px solid; letter-spacing: .2em; }
-[data-tpl="kippu"] .title { margin-top: 6px; padding-bottom: 3px; border-bottom: 2px solid; font-family: var(--mincho); font-weight: 600; letter-spacing: .08em; }
-[data-tpl="kippu"] .sub { margin-top: 6px; font-family: var(--mincho); font-weight: 400; letter-spacing: 0; }
+[data-tpl="kippu"] .title { margin-top: 6px; padding-bottom: 3px; border-bottom: 2px solid; font-family: var(--gothic); font-weight: 600; letter-spacing: .08em; }
+[data-tpl="kippu"] .sub { margin-top: 6px; font-family: var(--gothic); font-weight: 400; letter-spacing: 0; }
 [data-tpl="kippu"] .head .issue { display: flex; justify-content: space-between; align-items: baseline; margin-top: 10px; font-size: 13px; line-height: 1.4; }
 [data-tpl="kippu"] .head .issue b { font-family: var(--gothic); font-weight: 600; color: #B32B23; font-variant-numeric: tabular-nums; }
 [data-tpl="kippu"] .dayhead .cnt { color: #46525A; }
 [data-tpl="kippu"] .spot { position: relative; grid-template-columns: 28px 1fr; column-gap: 8px; margin: 8px 0; padding: 8px 10px 8px 0; }
 [data-tpl="kippu"] .spot .mark { grid-row: 1 / span 4; align-self: stretch; writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: .08em; white-space: nowrap; }
 [data-tpl="kippu"] .spot .mark::after { content: attr(data-date); }
-[data-tpl="kippu"] .spot .name { padding-bottom: 2px; border-bottom: 2px solid; font-family: var(--mincho); font-weight: 600; font-size: 18px; letter-spacing: .08em; }
+[data-tpl="kippu"] .spot .name { padding-bottom: 2px; border-bottom: 2px solid; font-family: var(--gothic); font-weight: 600; font-size: 18px; letter-spacing: .08em; }
 [data-tpl="kippu"] .spot .name::before { content: attr(data-n); display: inline-block; margin-right: 7px; padding: 0 3px; border: 1px solid; font-family: var(--gothic); font-size: 13px; font-weight: 600; letter-spacing: 0; line-height: 1.5; vertical-align: 2px; font-variant-numeric: tabular-nums; }
 [data-tpl="kippu"] .spot .time { margin-top: 4px; font-size: 17px; font-weight: 700; color: #1F2A44; }
-[data-tpl="kippu"] .spot .memo { font-family: var(--mincho); }
-[data-tpl="kippu"] .spot .serial { grid-column: 2; grid-row: 4; margin-top: 2px; font-family: var(--mincho); font-size: 13px; line-height: 1.5; color: #46525A; }
+[data-tpl="kippu"] .spot .memo { font-family: var(--gothic); }
+[data-tpl="kippu"] .spot .serial { grid-column: 2; grid-row: 4; margin-top: 2px; font-family: var(--gothic); font-size: 13px; line-height: 1.5; color: #46525A; }
 
 /* ---- 絵はがき: アルバムの灰緑の台紙・貼った札・切れ込みに差したはがき */
 body[data-tpl="postcard"] { background: #8C9478; }
@@ -178,7 +177,7 @@ body[data-tpl="postcard"] { background: #8C9478; }
 [data-tpl="postcard"] .spot .mark::before { content: ""; position: absolute; inset: 4px; border: 1px dashed #7A7F85; }
 [data-tpl="postcard"] .spot .mark::after { position: relative; }
 [data-tpl="postcard"] .spot .mark i { position: absolute; inset: -1px; background: linear-gradient(135deg, #8C9478 6px, transparent 6.4px), linear-gradient(225deg, #8C9478 6px, transparent 6.4px), linear-gradient(315deg, #8C9478 6px, transparent 6.4px), linear-gradient(45deg, #8C9478 6px, transparent 6.4px); }
-[data-tpl="postcard"] .spot .name { font-family: var(--mincho); font-weight: 600; font-size: 18px; letter-spacing: .03em; }
+[data-tpl="postcard"] .spot .name { font-family: var(--maru); font-weight: 600; font-size: 18px; letter-spacing: .03em; }
 
 /* ---- 時刻表: 白い誌面・紺の帯・時刻の列 */
 [data-tpl="jikoku"] .sheet { --navy: #1D3A8A; }
